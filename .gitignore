@@ -1,0 +1,16 @@
+# Shared ignores (each backend has its own .gitignore for its artifacts/jobs)
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+weights/
+out/
+*.wav
+*.flac
+*.safetensors
+*.onnx
+*.plan
+configs/env.local.sh
+.DS_Store
+*.swp

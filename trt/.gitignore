@@ -1,0 +1,53 @@
+# Python bytecode and tooling caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Python build and environment artifacts
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# Local configuration and editor/OS metadata
+.env
+.env.*
+!.env.example
+configs/env.local.sh
+.idea/
+.vscode/
+.DS_Store
+*.swp
+*~
+
+# Generated model artifacts and job outputs
+artifacts/
+outputs/
+results/
+scratch/
+*.onnx
+*.plan
+*.engine
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.wav
+*.flac
+*.mp3
+fds-*
+*.o[0-9]*
+*.e[0-9]*
+*.log
+
+
+# Native build products
+*.o
+*.a
+*.so

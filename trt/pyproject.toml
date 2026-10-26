@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fastdialoguesidon"
+version = "0.1.0"
+description = "FastDialogueSidon TensorRT backend (full-duplex two-speaker dialogue separation and joint restoration): fused FlexRel attention plugin, in-engine fbank, streaming runtime"
+requires-python = ">=3.10"
+dependencies = [
+    "torch==2.10.0",
+    "torchaudio==2.10.0",
+    "transformers==4.56.1",
+    "safetensors>=0.4",
+    "numpy",
+    "onnx==1.22.0",
+    "tensorrt-cu12==10.16.1.11",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

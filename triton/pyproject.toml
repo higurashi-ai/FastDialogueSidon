@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fds-triton"
+version = "0.1.0"
+description = "FastDialogueSidon speech separation in Triton kernels + cuBLAS (no TensorRT): fused FlexRel attention, cuDNN-split relative-key attention, CUDA-graph runtime"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.8",
+    "triton>=3.4",
+    "torchaudio>=2.8",
+    "transformers>=4.56",
+    "safetensors>=0.4",
+    "numpy",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
